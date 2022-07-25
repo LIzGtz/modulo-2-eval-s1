@@ -1,6 +1,6 @@
 import React from "react"
 import quotes from "./quotes.json"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import './QuoteBox.css'
 
 function QuoteBox() {    
@@ -21,6 +21,10 @@ function QuoteBox() {
 
         return newQuoteIndex;
     }
+
+    useEffect(() => {
+        document.body.style.backgroundColor = colors[colorIndex];
+    });
 
     return <div className="quote-container">
         <p style={{color: colors[colorIndex]}}>"{quotes[quoteIndex].quote}"</p>

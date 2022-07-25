@@ -1,4 +1,7 @@
 .quote-container {
     border-color: black;
     border: 2px solid;
+    background-color: lightgrey;
+    padding: 2em;
+    margin: 1em;
 }
